@@ -1,0 +1,7 @@
+int factorial(int x){
+    int y = x;
+    for(int n = 1; n < y; n++){
+        x = x*(y - n);
+    }
+    return x;
+    }
