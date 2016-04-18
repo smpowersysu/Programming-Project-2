@@ -11,8 +11,8 @@ return x;
 }
 int main(){
 char a[9];
-cout << "Enter w or n: ";
 for (int i=0;i<9;i++){
+cout << "Enter w or n: ";
 cin >> a[i];}//Puts w or n into char array
 int x[3],z=0;
 for(int i=0;i<9;i++,z++){
