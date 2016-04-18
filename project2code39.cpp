@@ -14,10 +14,14 @@ int main(){
 
 char a[9];
 
-cout << "Enter w or n: ";
-
 for (int i=0;i<9;i++){
-    cin >> a[i];}//Puts w or n into char array
+        cout << "Enter w or n: ";
+        cin >> a[i];//Puts w or n into char array
+        if (a[i] != 'w' and a[i] != 'n')
+        {
+        cout << "Invalid input." ;
+        return 0;
+        }
 
 int x[3],z=0;
 
