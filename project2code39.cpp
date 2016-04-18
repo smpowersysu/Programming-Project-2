@@ -7,6 +7,8 @@ int factorial(int x){
     for(int n = 1; n < y; n++){
         x = x*(y - n);
     }
+    if(x == 0)
+        x = 1;
     return x;
 }
 
