@@ -21,8 +21,13 @@ int main(){
             z[j] = k;
             k--;
             j++;
+
         }
     }
+    if(j!=4){
+        cout << "The number of b's is not correct";
+    }
+    else if(j==4){
     for(int i; i<4; i++){
         if(x[i] >= z[i]){
            f += choose(x[i], z[i]);
@@ -32,6 +37,7 @@ int main(){
         }
     }
     cout << f;
+    }
 }
 
 int choose(int n, int k){
