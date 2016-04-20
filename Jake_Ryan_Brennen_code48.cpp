@@ -10,6 +10,7 @@ int z[4]; // values of k into an array
 int j; //place holder for the values of b[i]
 int f; // output value
 int k = 4; //values of k that decrement so that we can use them for z
+int w;
 
 int main(){
     for(int i=7; i>=0; i--){
@@ -21,10 +22,12 @@ int main(){
             z[j] = k;
             k--;
             j++;
-
+        }
+        else if(barcode[i] == 'w'){
+            w++;
         }
     }
-    if(j!=4){
+    if(j!=4 || w!=4){
         cout << "The number of b's is not correct";
     }
     else if(j==4){
